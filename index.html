@@ -4,9 +4,56 @@
  <meta charset="UTF-8"> 
  <title>李俊的个人主页</title> 
  <style> 
- body { 
-background-color: beige; 
- } 
+body {
+        margin: 0px;
+    }
+
+    #box {
+        width: 100%;
+        height: 100px;
+        background-color: black;
+
+        position: fixed;
+        bottom: 0px;
+    }
+
+    #wechat {
+        width: 44px;
+        height: 44px;
+
+        background-image: url("imgs/wechat.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+        margin: 28px auto;
+
+        position: relative;
+    }
+
+    #code {
+        display: none;
+
+        width: 180px;
+        height: 180px;
+        background-color: white;
+
+        background-image: url("imgs/code_wps.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='male.png', sizingMethod='scale');
+        position: absolute;
+        left: -66px;
+        bottom: 70px;
+    }
+
+    #wechat:hover {
+        background-image: url("imgs/wechatH.png");
+    }
+
+    #wechat:hover>#code {
+        display: block;
+    }
+   
  h1{
   text-shadow: red -1px -3px,blue 3px 0px;
   color: white;
